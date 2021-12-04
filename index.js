@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const mySql=require('mysql');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
